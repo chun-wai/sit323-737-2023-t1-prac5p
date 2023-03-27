@@ -1,4 +1,4 @@
-# Using nginx bas image and perform healthcheck
+# Using nginx base image and perform healthcheck
 FROM nginx:latest
 
 HEALTHCHECK --interval=35s --timeout=4s
