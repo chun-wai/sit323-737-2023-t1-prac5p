@@ -1,3 +1,8 @@
+# Using nginx bas image and perform healthcheck
+FROM nginx:latest
+
+HEALTHCHECK --interval=35s --timeout=4s
+
 FROM node:16
 
 # Create app directory
