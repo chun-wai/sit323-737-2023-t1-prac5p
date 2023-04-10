@@ -1,0 +1,14 @@
+version: '3'
+services:
+  # using a web application server enginex
+  web: 
+    image: nginx
+
+    # expose port 8080:80
+    ports:
+      - 8080:80/tcp
+
+  #  using redis as a database
+  database:
+    image: redis
+    
